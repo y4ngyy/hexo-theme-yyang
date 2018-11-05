@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <%- partial('_partial/head') %>
+<body>
+    <%- partial('_partial/sidebar') %>
+    <div class="content-container">
+        <% page.posts.each(function (post) { %>
+        <div class="content shadow rounded">
+            <h1 class="text-center"><%= post.title %></h1>
+            <div class="text-center">
+                <i class="fa fa-calendar"></i>
+                <span><%- date(post.date,"YYYY-MM-DD")%></span>
+            </div>
+            <hr width="90%" color="#ddd">
+            <article>
+                <% if (post.excerpt) {%>
+                <%- post.excerpt %>
+                <a href="<%- url_for(post.path) %>" class="read-more">More</a>
+                <% } else { %>
+                <%- post.content %>
+                <% } %>
+            </article>
+            <hr width="90%" color="#ddd">
+        </div>
+        <% }) %>
+        <footer class="text-center text-secondary mb-4" style="font-size: 1.25em"><span>@y4ngyy</span></footer>
+    </div>
+
+    <%- partial('_partial/foot')%>
+</body>
+</html>
+

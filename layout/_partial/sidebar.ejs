@@ -1,0 +1,21 @@
+<div class="container sidebar rounded">
+    <!--头像区域-->
+    <div class="head bg-dark text-center">
+        <a href="#">
+            <img src="<%- url_for(theme.avatar) %>" alt="avatar.jpg">
+        </a>
+        <h2 class="text-light mt-4"><%= config.author %></h2>
+    </div>
+    <!--个人描述-->
+    <section class="text-center text-dark p-5"><h4 class="m-0"><%= config.description %></h4></section>
+    <!--导航条-->
+    <nav>
+        <ul class="nav flex-column text-center">
+            <% for (name in theme.menu) {%>
+            <li class="nav-item">
+                <a href="<%- url_for(theme.menu[name]) %>" class="nav-link text-secondary"><%= name %></a>
+            </li>
+            <% } %>
+        </ul>
+    </nav>
+</div>
