@@ -6,9 +6,10 @@
 
 已完成:
 - index已初步完成
+- archive 界面
 - 代码块风格和高亮(使用highlightjs)
 
 接下来的目标:
-- layout post archive catagories 界面
+- layout post catagories 界面
 - 响应式布局
 - (花里胡哨的特效)
