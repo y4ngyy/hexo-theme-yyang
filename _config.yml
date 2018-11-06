@@ -1,8 +1,8 @@
 menu:
   Home: /
   Archives: /archives
-  NoteBook: /notebook
-  CTF: /ctf
-  Web: /web
-
+  NoteBook: /catagories/notebook
+  CTF: /catagories/ctf
+  Web: /catagories/web
+# 头像链接
 avatar: http://y4ngyy.xyz/css/images/avatar.jpg
