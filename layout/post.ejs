@@ -7,7 +7,7 @@
 <%- partial('_partial/sidebar') %>
 <div class="content-container">
     <div class="content shadow rounded">
-        <h1 class="text-center"><%= page.title %></h1>
+        <h2 class="text-center"><%= page.title %></h2>
         <div class="text-center">
             <i class="fa fa-calendar"></i>
             <span><%- date(page.date,"YYYY-MM-DD")%></span>
@@ -18,8 +18,7 @@
         </article>
         <hr width="90%" color="#ddd">
     </div>
-    <footer class="text-center text-secondary mb-2"><span>@y4ngyy</span></footer>
+    <%- partial('_partial/foot')%>
 </div>
-<%- partial('_partial/foot')%>
 </body>
 </html>

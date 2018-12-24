@@ -1,4 +1,14 @@
-@import "sidebar.styl"
-@import "container.styl"
-@import "highlight.styl"
-@import "code.styl"
+@media all and (min-width: 800px)
+ @import "sidebar.styl"
+ @import "container.styl"
+ @import "highlight.styl"
+ @import "code.styl"
+
+@media all and (max-width: 800px)
+  body{
+    background:#ddd;
+  }
+  @import "highlight.styl"
+  @import "code.styl"
+  @import "headbar.styl"
+  @import "container-sm.styl"
