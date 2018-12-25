@@ -9,7 +9,7 @@
     <div class="content archives shadow rounded">
         <h2 class="text-left">Archive</h2>
         <hr width="90%" color="#ddd">
-        <% page.posts.each(function (post) { %>
+        <% page.posts.sort('date').each(function (post) { %>
         <a href="<%- url_for(post.path) %>" class="nav-link text-dark"><div class="archive-item rounded">
                 <span class="text-left mr-5 text-secondary"><%- date(post.date,"YYYY-MM-DD") %></span>
                 <span style="font-size: 1.25em"><%= post.title %></span>
