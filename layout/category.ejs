@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <%- partial('_partial/head') %>
+</head>
+<body>
+<%- partial('_partial/sidebar') %>
+<div class="content-container">
+    <div class="content archives shadow rounded">
+        <h2 class="text-left">Categories</h2>
+        <hr width="90%" color="#ddd">
+        <% site.categories.each(function(item) { %>
+            <h3 class="text-left" style="padding-left: 30px"><%= item.name %></h3>
+            <% item.posts.each(function (post) { %>
+            <a href="<%- url_for(post.path) %>" class="nav-link text-dark"><div class="archive-item rounded">
+                    <span class="text-left mr-5 text-secondary"><%- date(post.date,"YYYY-MM-DD") %></span>
+                    <span style="font-size: 1em"><%= post.title %></span>
+                </div></a>
+            <%})%>
+        <%})%>
+        <hr width="90%" color="#ddd">
+    </div>
+    <%- partial('_partial/foot') %>
+</div>
+
+</body>
+</html>

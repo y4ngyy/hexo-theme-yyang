@@ -10,10 +10,11 @@
 - archive 界面
 - 代码块风格和高亮(使用highlightjs)
 - 响应式布局
+- category
 
 接下来的目标:
 
-- tag category功能
+- tag功能
 - (花里胡哨的特效)
 
 ## 效果见[www.y4ngyy.xyz](http://y4ngyy.xyz)
